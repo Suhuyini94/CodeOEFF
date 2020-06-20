@@ -27,13 +27,13 @@ int main()
 
 	{
 
-		if ((num % 3 == 0 or num % 5 == 0))
+		if (num % 3 == 0 or num % 5 == 0)
 		{
 			result = result + num;
 		}
 	}
 
-	cout << "The sum of all natural numbers divisible by 3 or 5 up to " << N << " is " << result;
+	cout << "The sum of all natural numbers divisible by 3 or 5 up to " << N << " is " << result << endl;
 
 	return 0;
 }
