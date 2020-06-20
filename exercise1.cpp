@@ -27,7 +27,7 @@ int main()
 
 	{
 
-		if (num % 3 == 0 or num % 5 == 0)
+		if (num % 3 == 0 || num % 5 == 0)
 		{
 			result = result + num;
 		}
