@@ -7,25 +7,33 @@ using namespace std;
 
 int main()
 {
-int N;
+	int N;
 	int num;
-	int result;
+	int result = 0;
 
-    // input goes here
+	// input goes here
 
 	cout << "Enter the highest number!" << endl;
-  cin >> N;
+	cin >> N;
 
-
-  // iterate from 1 to N
-	for (num =1; num <= N; num++)
+	while (N < 0)
 	{
-		// Short-circuit operator is used
-		if (num % 3 == 0 || num % 5 == 0)
+		cout << "Enter positve numbers ONLY\n";
+		cin >> N;
+	}
+	// iterate from 0 to N
 
-            result += num;
-    }
-        cout << "The sum of all natural numbers divisible by 3 or 5 up to " << N <<" is " << result;
+	for (num = 0; num <= N; num++)
 
-return 0;
+	{
+
+		if ((num % 3 == 0 or num % 5 == 0))
+		{
+			result = result + num;
+		}
+	}
+
+	cout << "The sum of all natural numbers divisible by 3 or 5 up to " << N << " is " << result;
+
+	return 0;
 }
