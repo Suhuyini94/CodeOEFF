@@ -5,24 +5,24 @@ positive, negative, or zero.*/
 #include <iostream>
 using namespace std;
 
-
 int main()
 {
     int x;
-    cout <<"Enter a number!" << endl;
+    cout << "Enter a number!" << endl;
     cin >> x;
-    while (x == 0)
-    {
-        cout << x <<" is zero" << endl;
-        return 0;
-    }
+
     if (x > 0)
     {
-        cout << x <<" is positive" << endl;
+        cout << x << " is positive" << endl;
     }
     else
     {
-        cout << x <<" is negative" << endl;
+        cout << x << " is negative" << endl;
+    }
+
+    if (x == 0)
+    {
+        cout << x << " is zero" << endl;
     }
     return 0;
 }
