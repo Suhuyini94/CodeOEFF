@@ -15,14 +15,14 @@ int main()
     {
         cout << x << " is positive" << endl;
     }
-    else
+    else if (x < 0)
     {
         cout << x << " is negative" << endl;
     }
-
-    if (x == 0)
+    else
     {
         cout << x << " is zero" << endl;
     }
+
     return 0;
 }
